@@ -21,6 +21,7 @@ export default {
 };
 </script>
 
+
 <style>
 a {
   text-decoration: none;
@@ -28,5 +29,50 @@ a {
 
 .router-link-exact-active {
   background: red;
+}
+
+/* COLOR */
+.diatomic-nonmetal {
+  background: #00897b;
+}
+
+.noble-gas {
+  background: #039be5;
+}
+
+.alkali-metal {
+  background: #a1887f;
+}
+
+.alkaline-earth-metal {
+  background: #00b8d4;
+}
+
+.metalloid {
+  background: #d32f2f;
+}
+
+.polyatomic-nonmetal {
+  background: #ffb300;
+}
+
+.post-transition-metal {
+  background: #43a047;
+}
+
+.transition-metal {
+  background: #f4511e;
+}
+
+.lanthanide {
+  background: #1b5e20;
+}
+
+.actinide {
+  background: #f57f17;
+}
+
+.unknown {
+  background: #757575;
 }
 </style>

@@ -5,7 +5,12 @@
         <v-card class="pa-2" @click="dummy">
           <router-link :to="'/detail/' + atom.name.toLowerCase()">
             <v-list-item>
-              <v-list-item-avatar tile size="60" color="grey darken-2 white--text">{{atom.symbol}}</v-list-item-avatar>
+              <v-list-item-avatar
+                tile
+                size="60"
+                color="white--text"
+                :class="atom.category_dashed"
+              >{{atom.symbol}}</v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title class="headline mb-1">{{atom.name}}</v-list-item-title>
                 <v-list-item-subtitle>{{atom.category}}</v-list-item-subtitle>
@@ -35,7 +40,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .v-card:hover {
   background: #f6f6f6;
   transition: background 100ms;

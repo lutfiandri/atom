@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar app color="white" elevate-on-scroll :class="!drawer.active && 'px-10'">
+    <v-app-bar app color="white" elevate-on-scroll :class="!drawer.active && 'px-md-10'">
       <v-app-bar-nav-icon @click="drawer.active = !drawer.active"></v-app-bar-nav-icon>
 
       <v-toolbar-title>{{title}}</v-toolbar-title>
@@ -11,8 +11,8 @@
       <v-list>
         <v-list-item two-line>
           <v-list-item-content>
-            <v-list-item-title class="title">Application</v-list-item-title>
-            <v-list-item-subtitle>subtext</v-list-item-subtitle>
+            <v-list-item-title class="title">Atom</v-list-item-title>
+            <v-list-item-subtitle>version 1.0.0</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
         <v-divider></v-divider>
@@ -44,6 +44,11 @@ export default {
       list: [
         {
           path: "/",
+          title: "Home",
+          icon: "mdi-home"
+        },
+        {
+          path: "/table",
           title: "Table",
           icon: "mdi-view-grid"
         },
