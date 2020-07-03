@@ -9,7 +9,8 @@ import { store } from '@/store/store'
 
 const router = new VueRouter({
   routes: Routes,
-  mode: 'history'
+  mode: 'history',
+  base: '/atom/'
 })
 
 Vue.use(VueRouter);
